@@ -1,0 +1,70 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    }
+    .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 45px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 25px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 300px;
+    caret-color:rgb(255, 255, 255);
+    transition: width 0.4s linear;
+    }
+    .searchbar:hover > .search_icon{
+    background: rgb(255, 251, 0);
+    color: #131211;
+    }
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    .search_icon{
+    height: 25px;
+    width: 25px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:rgb(253, 253, 253);
+    text-decoration:none;
+    }
+    /*Quando a tela for de 600pixel para baixo o tamanho da area da barra de pesquisa diminui */
+    @media screen and (max-width: 600px){
+      .searchbar:hover > .search_input{
+      width: 150px;
+  }
+}
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
